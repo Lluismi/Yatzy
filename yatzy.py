@@ -1,5 +1,13 @@
 class Yatzy:
 
+    def __init__(self, d1, d2, d3, d4, d5):
+        self.dice = [0]*5
+        self.dice[0] = d1
+        self.dice[1] = d2
+        self.dice[2] = d3
+        self.dice[3] = d4
+        self.dice[4] = d5
+
     @staticmethod
     def total_score(*dice):
         total = 0
@@ -27,14 +35,6 @@ class Yatzy:
     def threes(*dice):
         THREE = 3
         return dice.count(THREE) * THREE
-
-    def __init__(self, d1, d2, d3, d4, d5):
-        self.dice = [0]*5
-        self.dice[0] = d1
-        self.dice[1] = d2
-        self.dice[2] = d3
-        self.dice[3] = d4
-        self.dice[4] = d5
 
     def fours(self):
         four = 4
