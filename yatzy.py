@@ -100,7 +100,6 @@ class Yatzy:
 
     @staticmethod
     def fullHouse(*dice):
-            if Yatzy.two_pair(*dice) and Yatzy.three_pair(*dice):
-                return Yatzy.two_pair(*dice) + Yatzy.three_pair(*dice)
-            else:
-                return 0
+            if Yatzy.one_pair(*dice) and Yatzy.three_pair(*dice):
+                return Yatzy.one_pair(*dice) + Yatzy.three_pair(*dice)
+            return 0
