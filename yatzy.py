@@ -50,8 +50,8 @@ class Yatzy:
 
     @staticmethod
     def one_pair(*dice):
-        for dado in range(6):
-            if dice.count(dado) == 2:
+        for dado in range(6, 0, -1):
+            if dice.count(dado) > 1:
                 return 2 * dado
         return 0
 
