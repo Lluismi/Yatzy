@@ -73,15 +73,15 @@ class Yatzy:
     @staticmethod
     def three_pair(*dice):
         for dado in range(6):
-            if dice.count(dado) == 3:
+            if dice.count(dado) >= 3:
                 return 3 * dado
         return 0
 
     @staticmethod
     def four_pair(*dice):
-        for numero in range(6):
-            if dice.count(numero) >= 4:
-                return 4 * numero
+        for dado in range(6):
+            if dice.count(dado) >= 4:
+                return 4 * dado
         return 0
 
     @staticmethod
